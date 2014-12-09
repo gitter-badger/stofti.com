@@ -1,0 +1,29 @@
+{
+  "name": "stofti",
+  "version": "0.0.1",
+  "description": "Website for Stories From the Internet",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enkhi77/stofti"
+  },
+  "keywords": [
+    "stofti"
+  ],
+  "author": "Wesley Song",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enkhi77/stofti/issues"
+  },
+  "homepage": "https://github.com/enkhi77/stofti",
+  "dependencies": {
+    "csurf": "^1.6.3",
+    "express": "^4.10.4",
+    "express-stormpath": "^0.5.5",
+    "forms": "^1.0.0",
+    "xtend": "^4.0.0"
+  }
+}
