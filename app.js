@@ -19,7 +19,7 @@ app.use(stormpath.init(app, {
 
 app.use(express.static(__dirname + "/public"));
 
-app.get('/');
+app.get('/', indexController.index);
 
 app.listen(9000);
 console.log('Listening on port 9000');
