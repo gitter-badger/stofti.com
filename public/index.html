@@ -20,27 +20,27 @@
 </head>
 <!-- SET THE CONTROLLER-->
 <body ng-controller="MainController">
-<div>
-    <!-- Navbar -->
-    <div ng-controller="NavController">
-        <div ng-include src="'/partials/navbar.html'"></div>
-    </div>
-    <!-- Header -->
-    <div class="jumbotron">
-        <h1>Welcome to StoFtI</h1>
-    </div>
-    <!-- Content Render -->
-    <div ng-view>
-        <div ng-include src="'/partials/home.html'" ng-show="pageLocation === 'home'"></div>
-        <div ng-include src="'/partials/about.html'" ng-show="pageLocation === 'about'"></div>
-    </div>
+    <div>
+        <!-- Navbar -->
+        <div ng-controller="NavController">
+            <div ng-include src="'/partials/navbar.html'"></div>
+        </div>
+        <!-- Header -->
+        <div class="jumbotron">
+            <h1>Welcome to StoFtI</h1>
+        </div>
+        <!-- Content Render -->
+        <div ng-view>
+            <div ng-include src="'/partials/home.html'" ng-show="pageLocation === 'home'"></div>
+            <div ng-include src="'/partials/about.html'" ng-show="pageLocation === 'about'"></div>
+        </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>Copyright 2014, all rights reserved. All information is property of someone important. Please email <a href="mailto:wes-song@gmail.com">Webmaster</a></p>
-    </div>
+        <!-- Footer -->
+        <div class="footer">
+            <p>Copyright 2014, all rights reserved. All information is property of someone important. Please email <a href="mailto:wes-song@gmail.com">Webmaster</a></p>
+        </div>
 
-</div>
+    </div>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js'></script>
 </body>
 </html>
