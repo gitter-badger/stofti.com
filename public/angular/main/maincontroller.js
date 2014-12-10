@@ -1,5 +1,6 @@
-var stofti = angular.module('stofti');
+var stoftiApp = angular.module('stoftiApp');
 
-stofti.controller('mainController', ['$scope', function($scope){
+stoftiApp.controller('MainController', ['$scope', function($scope){
     $scope.greeting = "Hello you crazy kids"
+    $scope.pageLocation = "home"
 }]);

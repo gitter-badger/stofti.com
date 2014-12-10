@@ -9,9 +9,6 @@ mongoose.connect('mongodb://localhost/stofti');
 
 var indexController = require('./controllers/index.js');
 
-//app.set('views', './views');
-//app.set('view engine', 'jade');
-
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
@@ -22,7 +19,7 @@ app.use(stormpath.init(app, {
 
 app.use(express.static(__dirname + "/public"));
 
-app.get('/', indexController);
+app.get('/');
 
 app.listen(9000);
 console.log('Listening on port 9000');
