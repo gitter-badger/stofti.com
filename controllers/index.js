@@ -5,13 +5,13 @@ var Story = require("../models/story.js");
 var Voting = require("../models/voting.js");
 var indexController = {
     read: function(req, res){
-        console.log('read')
+        console.log('read', req)
     },
     write: function(req, res){
-        console.log('write')
+        console.log('write', req)
     },
     vote: function(req, res){
-        console.log('vote')
+        console.log('vote', req)
     }
 };
 
