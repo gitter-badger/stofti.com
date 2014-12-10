@@ -19,10 +19,13 @@ app.use(stormpath.init(app, {
 
 app.use(express.static(__dirname + "/public"));
 
-app.get('/');
 app.get('/api/read', indexController.read);
 app.get('/api/write', indexController.write);
 app.get('/api/vote', indexController.vote);
+app.post('/api/writenew', indexController.writenew);
+app.post('/api/vote', indexController.newvote);
+app.put('/api/write', indexController.writeedit);
+app.get('/');
 
 app.listen(process.env.PORT || 9000, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);

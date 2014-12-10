@@ -1,8 +1,8 @@
 var mongoose = require('mongoose');
 
 var Story = mongoose.model('story', {
-    story_id: Number
-    title: String,
+    story_id: Number,
+    story_title: String,
     edit_end: Date,
     vote_end: Date,
     contributions: [{

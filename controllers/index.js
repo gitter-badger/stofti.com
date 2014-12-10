@@ -12,6 +12,15 @@ var indexController = {
     },
     vote: function(req, res){
         console.log('vote', req)
+    },
+    writenew: function(req, res){
+        console.log('writenew', req)
+    },
+    newvote: function(req, res){
+        console.log('newvote', req)
+    },
+    writeedit: function(req, res){
+        console.log('writeedit', req)
     }
 };
 

@@ -1,6 +1,7 @@
 var stoftiApp = angular.module('stoftiApp', [
     'ngResource',
     'ngSanitize',
+    'ngRoute',
     'ui.router',
     'mgcrea.ngStrap'
 ]);
@@ -11,7 +12,7 @@ stoftiApp.config(function($stateProvider, $urlRouterProvider, $locationProvider)
     $stateProvider
         .state('home', {
             url: "/",
-            templateUrl: "/partials/home.html",
+            templateUrl: "/partials/home.html"
         })
         .state('about', {
             url: "/about",
