@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost/stofti');
+mongoose.connect('mongodb://dogen.mongohq.com:10004/app31803285');
 
 var indexController = require('./controllers/index.js');
 
