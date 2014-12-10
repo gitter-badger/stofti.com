@@ -11,7 +11,7 @@ stoftiApp.config(function($stateProvider, $urlRouterProvider, $locationProvider)
     $stateProvider
         .state('home', {
             url: "/",
-            templateUrl: "/partials/home.html"
+            templateUrl: "/partials/home.html",
         })
         .state('about', {
             url: "/about",
@@ -20,5 +20,20 @@ stoftiApp.config(function($stateProvider, $urlRouterProvider, $locationProvider)
         .state('news', {
             url: "/news",
             templateUrl: "/partials/news.html"
+        })
+        .state('read', {
+            url: "/read?story_id&contrib_id",
+            templateUrl: "/partials/read.html",
+            controller: "ReadController"
+        })
+        .state('writenew', {
+            url: "/write?new",
+            templateUrl: "partials/write.html",
+            controller: "WriteController"
+        })
+        .state('writeedit', {
+            url: "/write?story_id&contrib_id",
+            templateUrl: "partials/write.html",
+            controller: "WriteController"
         })
 });

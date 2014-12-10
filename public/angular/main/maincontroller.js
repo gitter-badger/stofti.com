@@ -18,9 +18,10 @@ stoftiApp.controller('MainController', ['$scope', '$state', function($scope, $st
             "target": "_self"
         }
     ]
-    $scope.$watch(function($state){
-        console.log('Watching State', $state)
-    }, function(){
-
-    })
+    $scope.user = {
+        name: "",
+        email: "",
+        screenname: "",
+        author_id: ""
+    }
 }]);
