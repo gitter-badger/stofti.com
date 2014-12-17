@@ -1,1 +1,0 @@
-var stofti = angular.module('stofti');

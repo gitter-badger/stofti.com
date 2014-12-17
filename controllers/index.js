@@ -1,11 +1,26 @@
 var mongoose = require('mongoose');
 var Content = require("../models/content.js");
+var Contribution = require("../models/contribution.js");
+var Story = require("../models/story.js");
+var Voting = require("../models/voting.js");
 var indexController = {
-    index: function(req, res) {
-        console.log('index page', req)
+    read: function(req, res){
+        console.log('read', req)
     },
-    page: function(req, res) {
-        console.log('other page', req)
+    write: function(req, res){
+        console.log('write', req)
+    },
+    vote: function(req, res){
+        console.log('vote', req)
+    },
+    writenew: function(req, res){
+        console.log('writenew', req)
+    },
+    newvote: function(req, res){
+        console.log('newvote', req)
+    },
+    writeedit: function(req, res){
+        console.log('writeedit', req)
     }
 };
 
