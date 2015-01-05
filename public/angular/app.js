@@ -1,7 +1,4 @@
 var stoftiApp = angular.module('stoftiApp', [
-    'ngResource',
-    'ngSanitize',
-    'ngRoute',
     'ui.router',
     'mgcrea.ngStrap'
 ]);

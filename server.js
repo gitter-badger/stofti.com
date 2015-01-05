@@ -8,6 +8,7 @@ var app = express();
 mongoose.connect('mongodb://dogen.mongohq.com:10004/app31803285');
 
 var indexController = require('./controllers/index.js');
+var userController = require('./controllers/user.js');
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -19,6 +20,7 @@ app.use(stormpath.init(app, {
 
 app.use(express.static(__dirname + "/public"));
 
+app.get('/api/user', userController.read);
 app.get('/api/read', indexController.read);
 app.get('/api/write', indexController.write);
 app.get('/api/vote', indexController.vote);

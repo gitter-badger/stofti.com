@@ -1,6 +1,6 @@
 var stoftiApp = angular.module('stoftiApp');
 
-stoftiApp.factory('Users', ['$http', '$location', '$route', function($http, $location, $route){
+stoftiApp.factory('Users', ['$http', function($http){
     return {
         getUser:  function(id, callback){
             $http.get('/api/user?user_id='+id)
